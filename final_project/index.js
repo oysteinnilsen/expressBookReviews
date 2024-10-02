@@ -36,7 +36,8 @@ app.use("/customer/auth/*", function auth(req,res,next){
         return res.status(208).json({ message: "Invalid Login. Check your username and password"})
     }
 });
- 
+
+// TCP port for the application
 const PORT =5000;
 
 app.use("/customer", customer_routes);
